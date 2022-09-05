@@ -18,12 +18,12 @@ app.get("/", (req, res) => {
     {
       text: "Hi there!",
       user: "Renato",
-      added: new Date(),
+      date: new Date(),
     },
     {
       text: "Hello World!",
       user: "Mark",
-      added: new Date(),
+      date: new Date(),
     },
   ]
   res.render("index", { messages: messages })
