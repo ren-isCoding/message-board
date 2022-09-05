@@ -79,6 +79,7 @@ body {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: rgb(180, 226, 242);
@@ -94,4 +95,12 @@ body {
 
 .text {
   font-style: italic;
+  font-size: 1.8rem;
+}
+
+.date {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: rgb(53, 53, 53);
 }
