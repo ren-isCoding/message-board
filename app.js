@@ -11,6 +11,7 @@ app.use(express.static("public"))
 // Set Template Engine
 app.set("view engine", "ejs")
 
+// Routers
 app.use("/messages", messageRouter)
 
 app.get("/", (req, res) => {
