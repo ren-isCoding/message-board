@@ -1,9 +1,12 @@
 // Imports
 const express = require("express")
+const mongoose = require("mongoose")
 const messageRouter = require("./routes/messages")
 
+// Config
 const app = express()
 const port = 3000
+mongoose.connect("mongodb://localhost/message-board")
 
 // Static Files
 app.use(express.static("public"))
