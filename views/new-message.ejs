@@ -18,8 +18,8 @@
     <div class="main">
       <a class="go-back-btn" href="/">Go Back</a>
       <form action="/messages" method="POST">
-        <input class="user-input" type="text" placeholder="Username" >
-        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <input name="user" required autocomplete="off" class="user-input" type="text" placeholder="Username" >
+        <textarea name="text" required cols="30" rows="10" placeholder="Message"></textarea>
         <button class="submit-msg-btn" type="submit">Submit</button>
       </form>
     </div>
